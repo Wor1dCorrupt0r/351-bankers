@@ -1,0 +1,198 @@
+Processing file: 'bankers_tiny.txt'...
+
+Banker's algorithm simulation beginning...
+--------------------------------------------
+available: [ 3  4]
+P#  0       2  1        3  3        1  2
+P#  1       3  3        4  3        1  0
+P#  2       1  1        2  2        1  1
+
+<<< Customer thread p#2 started... >>>
+REQUEST of  1  1 for customer 2 request was approved: YES
+available: [ 2  3]
+P#  0       2  1        3  3        1  2
+P#  1       3  3        4  3        1  0
+P#  2      ------      ------      ------
+
+Customer p#2 has released all resources and is shutting down
+available: [ 4  5]
+P#  0       2  1        3  3        1  2
+P#  1       3  3        4  3        1  0
+P#  2      ------      ------      ------
+
+>>>>>>>>>>>>>>> Customer thread p#2 shutting down... <<<<<<<<<<<<<<<<<
+
+available: [ 4  5]
+P#  0       2  1        3  3        1  2
+P#  1       3  3        4  3        1  0
+P#  2      ------      ------      ------
+
+<<< Customer thread p#1 started... >>>
+REQUEST of  1  0 for customer 1 request was approved: YES
+available: [ 3  5]
+P#  0       2  1        3  3        1  2
+P#  1      ------      ------      ------
+P#  2      ------      ------      ------
+
+Customer p#1 has released all resources and is shutting down
+available: [ 7  8]
+P#  0       2  1        3  3        1  2
+P#  1      ------      ------      ------
+P#  2      ------      ------      ------
+
+>>>>>>>>>>>>>>> Customer thread p#1 shutting down... <<<<<<<<<<<<<<<<<
+
+available: [ 7  8]
+P#  0       2  1        3  3        1  2
+P#  1      ------      ------      ------
+P#  2      ------      ------      ------
+
+<<< Customer thread p#0 started... >>>
+REQUEST of  1  2 for customer 0 request was approved: YES
+available: [ 6  6]
+P#  0      ------      ------      ------
+P#  1      ------      ------      ------
+P#  2      ------      ------      ------
+
+Customer p#0 has released all resources and is shutting down
+available: [ 9  9]
+P#  0      ------      ------      ------
+P#  1      ------      ------      ------
+P#  2      ------      ------      ------
+
+>>>>>>>>>>>>>>> Customer thread p#0 shutting down... <<<<<<<<<<<<<<<<<
+
+available: [ 9  9]
+P#  0      ------      ------      ------
+P#  1      ------      ------      ------
+P#  2      ------      ------      ------
+
+
+Banker's algorithm simulation completed...
+
+
+
+                ...done.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Processing file: 'bankers_small.txt'...
+
+Banker's algorithm simulation beginning...
+--------------------------------------------
+available: [ 2  2  4]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1       1  2  1        2  2  2        1  0  1
+P#  2       1  1  1        1  3  1        0  2  0
+P#  3       0  0  1        1  1  1        1  1  0
+
+<<< Customer thread p#3 started... >>>
+REQUEST of  1  1  0 for customer 3 request was approved: YES
+available: [ 1  1  4]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1       1  2  1        2  2  2        1  0  1
+P#  2       1  1  1        1  3  1        0  2  0
+P#  3      ---------      ---------      ---------
+
+Customer p#3 has released all resources and is shutting down
+available: [ 2  2  5]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1       1  2  1        2  2  2        1  0  1
+P#  2       1  1  1        1  3  1        0  2  0
+P#  3      ---------      ---------      ---------
+
+>>>>>>>>>>>>>>> Customer thread p#3 shutting down... <<<<<<<<<<<<<<<<<
+
+available: [ 2  2  5]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1       1  2  1        2  2  2        1  0  1
+P#  2       1  1  1        1  3  1        0  2  0
+P#  3      ---------      ---------      ---------
+
+<<< Customer thread p#2 started... >>>
+REQUEST of  0  1  0 for customer 2 request was approved: YES
+available: [ 2  1  5]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1       1  2  1        2  2  2        1  0  1
+P#  2       1  2  1        1  3  1        0  1  0
+P#  3      ---------      ---------      ---------
+
+REQUEST of  0  1  0 for customer 2 request was approved: YES
+available: [ 2  0  5]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1       1  2  1        2  2  2        1  0  1
+P#  2      ---------      ---------      ---------
+P#  3      ---------      ---------      ---------
+
+Customer p#2 has released all resources and is shutting down
+available: [ 3  3  6]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1       1  2  1        2  2  2        1  0  1
+P#  2      ---------      ---------      ---------
+P#  3      ---------      ---------      ---------
+
+>>>>>>>>>>>>>>> Customer thread p#2 shutting down... <<<<<<<<<<<<<<<<<
+
+available: [ 3  3  6]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1       1  2  1        2  2  2        1  0  1
+P#  2      ---------      ---------      ---------
+P#  3      ---------      ---------      ---------
+
+<<< Customer thread p#1 started... >>>
+REQUEST of  1  0  1 for customer 1 request was approved: YES
+available: [ 2  3  5]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1      ---------      ---------      ---------
+P#  2      ---------      ---------      ---------
+P#  3      ---------      ---------      ---------
+
+Customer p#1 has released all resources and is shutting down
+available: [ 4  5  7]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1      ---------      ---------      ---------
+P#  2      ---------      ---------      ---------
+P#  3      ---------      ---------      ---------
+
+>>>>>>>>>>>>>>> Customer thread p#1 shutting down... <<<<<<<<<<<<<<<<<
+
+available: [ 4  5  7]
+P#  0       3  2  1        3  3  3        0  1  2
+P#  1      ---------      ---------      ---------
+P#  2      ---------      ---------      ---------
+P#  3      ---------      ---------      ---------
+
+<<< Customer thread p#0 started... >>>
+REQUEST of  0  1  1 for customer 0 request was approved: YES
+available: [ 4  4  6]
+P#  0       3  3  2        3  3  3        0  0  1
+P#  1      ---------      ---------      ---------
+P#  2      ---------      ---------      ---------
+P#  3      ---------      ---------      ---------
+
+REQUEST of  0  0  1 for customer 0 request was approved: YES
+available: [ 4  4  5]
+P#  0      ---------      ---------      ---------
+P#  1      ---------      ---------      ---------
+P#  2      ---------      ---------      ---------
+P#  3      ---------      ---------      ---------
+
+Customer p#0 has released all resources and is shutting down
+available: [ 7  7  8]
+P#  0      ---------      ---------      ---------
+P#  1      ---------      ---------      ---------
+P#  2      ---------      ---------      ---------
+P#  3      ---------      ---------      ---------
+
+>>>>>>>>>>>>>>> Customer thread p#0 shutting down... <<<<<<<<<<<<<<<<<
+
+available: [ 7  7  8]
+P#  0      ---------      ---------      ---------
+P#  1      ---------      ---------      ---------
+P#  2      ---------      ---------      ---------
+P#  3      ---------      ---------      ---------
+
+
+Banker's algorithm simulation completed...
+
+
+
+                ...done.
